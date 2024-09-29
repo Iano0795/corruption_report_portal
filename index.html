@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Corruption Anonymously</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Corruption Report Portal</h1>
+        </header>
+        
+        <div class="info-boxes">
+            <div class="info-box">
+                <h3>Be a Voice for Change</h3>
+                <p>Corruption thrives when people stay silent. Reporting corrupt activities helps uncover injustices and promotes transparency. Your contribution can create a ripple effect for positive change.</p>
+            </div>
+            <div class="info-box">
+                <h3>Stay Anonymous, Stay Safe</h3>
+                <p>We value your safety and privacy. Our platform ensures your identity remains anonymous, allowing you to speak up without fear. You’re protected from retaliation.</p>
+            </div>
+            <div class="info-box">
+                <h3>Impact Beyond Words</h3>
+                <p>Your report is essential for creating accountability and justice. Each submission brings us closer to eliminating corruption. Authorities use these insights to take meaningful actions.</p>
+            </div>
+            <div class="info-box">
+                <h3>Upload Evidence</h3>
+                <p>Although not mandatory, any additional evidence like photos or videos can help strengthen your report. Your vigilance can help unveil the truth and aid investigations.</p>
+            </div>
+        </div>
+
+        <section class="report-form-section">
+            <h2>Submit a Corruption Report</h2>
+            <form id="reportForm" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="accused">Accused:</label>
+                    <input type="text" id="accused" name="accused" required>
+                </div>
+                <div class="form-group">
+                    <label for="position">Rank/Position of Accused:</label>
+                    <input type="text" id="position" name="position" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description of Incident:</label>
+                    <textarea id="description" name="description" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="location_incidence">Location of Incident:</label>
+                    <input type="text" id="location_incidence" name="location_incidence" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date of Incident:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="evidence">Upload Evidence (Optional):</label>
+                    <input type="file" id="evidence" name="media" accept="image/*,video/*">
+                    <small>Supported formats: PNG, JPG, JPEG, MP4, MOV | Max size: 10 MB</small>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Submit Report">
+                </div>
+            </form>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
